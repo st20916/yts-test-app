@@ -54,5 +54,19 @@
 
 
 ## Vite 로 Github Pages 배포 방법
-1. `npm run build`
-2. `npm i gh-pages --save-dev` 설치
+1. `npm i gh-pages --save-dev` 설치
+2. **package.json**에서 `"homepage" : "https://<본인 아이디>.github.io/<Repository Name>"` 작성
+3. **vite.config.js**에서 `base : "/<Repository Name>/"` 작성
+4. **package.json**에서 `scripts` 부분 아래와 같이 추가
+
+```json
+{
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+}
+```
+
+5. 현재 있는 코드들을 Repository 에 push
+6. 다 올렸으면 `npm run deploy` 실행
