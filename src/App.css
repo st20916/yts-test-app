@@ -41,3 +41,60 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+
+/* Header */
+header { 
+  position: sticky; 
+  top: 0; 
+  padding: 5rem 0; 
+  background-color: #2f2f2f;
+  border-bottom: 1px solid #adaeb9; 
+  z-index: 9;
+}
+
+header .inner { display: flex; align-items: center; justify-content: space-between; }
+header h1 { font-size: 4rem; color: #fff; }
+header ul { display: flex; gap: 3rem; }
+header ul > li { font-size: 2rem; color: #adaeb9; transition: .5s; }
+header ul > li:hover { font-weight: 700; color: #ffa500; }
+
+/* About */
+.About { max-width: 60rem; margin: 0 auto; }
+.About h2 { 
+  margin-top: 10rem;
+  padding: 2rem 0 3rem; 
+  font-size: 6rem; 
+  color: #deb887; 
+}
+
+.About p {
+  padding: 3rem;
+  background-color: #fff;
+  font-size: 2.5rem; 
+  color: #adaeb9; 
+}
+
+/* Movies Detail */
+.Movie_detail {
+  margin-top: 10rem;
+  margin-bottom: 7rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 5px;
+  font-weight: 300;
+  color: #adaeb9;
+}
+
+.Movie_detail img {
+  position: relative;
+  top: -5rem;
+  width: 100%;
+  max-width: 25rem;
+  margin-right: 3rem;
+  box-shadow: 0 30px 60px -12px rgba(50, 50, 93, .25), 0 18px 36px -18px rgba(0, 0, 0, .025);
+}
+
+.Movie_detail .Movie_title { margin-bottom: .5rem; font-size: 3.4rem; color: #2c2c2c; }
+.Movie_detail .Movie_genres { display: flex; flex-wrap: wrap; margin: .5rem 0; }
+.Movie_detail .Movie_genres > li,
+.Movie_detail .Movie_year { margin-right: 1rem; font-size: 1.8rem; }

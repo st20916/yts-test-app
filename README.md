@@ -70,3 +70,14 @@
 
 5. 현재 있는 코드들을 Repository 에 push
 6. 다 올렸으면 `npm run deploy` 실행
+
+---
+
+# 2025.10.31
+## Refecotring
+* 기능 변경, 화면 변경 X
+* 코드만 변경
+  - 즉, 가독성 좋게만 변경
+
+
+## Clean Code
